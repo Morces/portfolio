@@ -42,6 +42,7 @@ border-radius: 50px 0px;
 color: white;
 background-color: #FEA303;
 width: 150px;
+height: 40px;
 margin-top: 40px;
 margin-left: 50px;
 }
@@ -60,4 +61,36 @@ flex-wrap: wrap;
 }
 .zero {
 background: linear-gradient(106.24deg, rgba(229, 229, 229, 0.5) 30.58%, rgba(5, 0, 255, 0.5) 52.9%);
+}
+.about {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 40px;
+background-color: #EFF6FC;
+}
+.about h2 {
+margin-top: 120px;
+margin-left: 100px;
+}
+.edu p {
+margin-right: 70px;
+margin-top: 30px;
+align-items: center;
+}
+.about h2:hover {
+cursor: pointer;
+text-decoration-line: underline;
+text-decoration-color: #FEA303;
+text-decoration-style: solid;
+text-decoration-thickness: 5px;
+}
+input.cv {
+border: 1px solid #FEA303;
+border-radius: 8px;
+background: transparent;
+padding: 8px;
+margin-left: 120px;
+margin-top: 50px;
+margin-bottom: 50px;
 }
