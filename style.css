@@ -26,3 +26,17 @@ border: 1px solid #FEA303;
 border-radius: 8px;
 color: white;
 }
+strong.p1 {
+color: #FEA303;
+font-size: 24px;
+}
+.welcome {
+width: 35%;
+margin-top: 150px;
+margin-left: 20px;
+}
+input.bttn {
+position: relative;
+border: 1px solid #FEA303;
+border-radius: 50px 0px;
+}
