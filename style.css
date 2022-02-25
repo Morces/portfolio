@@ -45,3 +45,11 @@ width: 150px;
 margin-top: 40px;
 margin-left: 50px;
 }
+.icons {
+display: flex;
+justify-content: space-between;
+width: 20%;
+margin-top: 20px;
+margin-left: 50px;
+height: 34px;
+}
