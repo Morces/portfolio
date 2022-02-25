@@ -145,3 +145,22 @@ margin-top: 40px;
 .digifua p{
 margin-right: 150px;
 }
+.tech {
+margin-top: 40px;
+background-color: #EFF6FC;
+}
+.skill h2 {
+text-align: center;
+}
+.skill h2:hover {
+cursor: pointer;
+text-decoration-line: underline;
+text-decoration-color: #FEA303;
+text-decoration-style: solid;
+text-decoration-thickness: 5px;
+}
+.pfl {
+display: flex;
+justify-content: space-between;
+height: 150px;
+}
