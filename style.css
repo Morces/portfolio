@@ -94,3 +94,51 @@ margin-left: 120px;
 margin-top: 50px;
 margin-bottom: 50px;
 }
+.projects {
+margin-top: 30px;
+}
+.projects h2:hover {
+cursor: pointer;
+text-decoration-line: underline;
+text-decoration-color: #FEA303;
+text-decoration-style: solid;
+text-decoration-thickness: 5px;
+}
+.projects h2 {
+text-align: center;
+}
+.burger {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.burger p {
+margin-right: 100px;
+}
+.insurance {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.insurance p {
+margin-right: 125px;
+}
+.quiz {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.quiz p {
+margin-right: 65px;
+}
+.digifua {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.digifua p{
+margin-right: 150px;
+}
