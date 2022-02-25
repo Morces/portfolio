@@ -162,5 +162,14 @@ text-decoration-thickness: 5px;
 .pfl {
 display: flex;
 justify-content: space-between;
-height: 150px;
+flex-wrap: wrap;
+}
+footer {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+footer section.icons {
+display: flex;
+justify-content: space-around;
 }
