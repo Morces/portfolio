@@ -39,4 +39,9 @@ input.bttn {
 position: relative;
 border: 1px solid #FEA303;
 border-radius: 50px 0px;
+color: white;
+background-color: #FEA303;
+width: 150px;
+margin-top: 40px;
+margin-left: 50px;
 }
