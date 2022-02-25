@@ -3,3 +3,26 @@ border-radius: 50%;
 margin-top: 20px;
 margin-left: 20px;
 }
+.first {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.navbar ul {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-right: 200px;
+margin-top: 35px;
+}
+.navbar ul li {
+list-style: none;
+}
+.navbar ul a {
+color: black;
+}
+.navbar ul a:hover {
+border: 1px solid #FEA303;
+border-radius: 8px;
+color: white;
+}
