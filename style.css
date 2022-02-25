@@ -53,3 +53,11 @@ margin-top: 20px;
 margin-left: 50px;
 height: 34px;
 }
+.second {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.zero {
+background: linear-gradient(106.24deg, rgba(229, 229, 229, 0.5) 30.58%, rgba(5, 0, 255, 0.5) 52.9%);
+}
