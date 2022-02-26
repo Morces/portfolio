@@ -57,6 +57,9 @@ margin-left: 50px;
 height: 34px;
 width: 25%;
 }
+.icons i:hover {
+cursor: pointer;
+}
 .second {
 display: flex;
 justify-content: space-around;
@@ -172,4 +175,7 @@ flex-wrap: wrap;
 footer section.icons {
 display: flex;
 justify-content: space-around;
+}
+footer section.icons i:hover {
+cursor: pointer;
 }
