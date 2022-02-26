@@ -8,6 +8,7 @@ Current contributers:
 MOSES KARANI
 ## Setup requirements
 You just need internet coonection and a device to access it directly from the internet.
+Click here to view my portfolio :https://moseskarani.github.io/portfolio/
 ## Known Bugs
 None yet.
 ## Technologies used 
