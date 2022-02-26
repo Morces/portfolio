@@ -296,7 +296,7 @@ cursor: pointer;
       }
       .edu p {
         text-align: center;
-        width: 100vw;
+        width: 95vw;
       }
       input.cv {
       width: 55%;
@@ -318,7 +318,8 @@ cursor: pointer;
         margin-top: 10px;
         
       }
-      footer section.icons i {
+      footer section.icons i  {
         cursor: pointer;
+        
       }
 }
