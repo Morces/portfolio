@@ -3,134 +3,615 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">  
+	<meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" media="all">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/base.css">  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
   <title>portfolio</title>
+  <link rel="icon" type="image/png" href="img/my-logo.jpeg">
 </head>
-<body>
-  <div class="container-fluid">
-    <div class="zero">
-      <div class="first">
-        <img class="logo" src="img/my-logo.jpeg" alt="logo" height="80">
-        <div class="navbar-expand{-sm| -md| -lg| -xl| -xxl}">
-          <nav class="navbar">
-            <ul>
-              <a class="nav-link" href="#"><li class="nav-item">HOME</li></a>
-              <a class="nav-link" href="#"><li class="nav-item">ABOUT ME</li></a>
-              <a class="nav-link" href="#"><li class="nav-item">MY PROJECTS</li></a>
-              <a class="nav-link" href="#"><li class="nav-item">RESUME</li></a>
-              <a class="nav-link" href="#"><li class="nav-item">CONTACT ME</li></a>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="second">
-        <div class="welcome"> 
-          <p><strong class="p1">Welcome!!</strong></p><br>
-          <p>Hi there...<strong>I'm Moses Karani</strong> and I am a web developer <br>
-            I also design websites, business cards, burners and many more items
-          </p>
-          <input class="bttn" type="button" value="CONTACT ME">
-          <section class="icons">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
-          </section>
-        </div>
-        <img class="me" src="img/my-pic.png" alt="my photo" height="450">
-      </div>
-    </div>
-    <div class="about">
-      <h2>ABOUT ME</h2>
-      <div class="edu">
-        <p>
-          I graduated from Jomo Kenyatta University of Agriculture and <br>
-        Technology with a Bachelor’s Degree in Analytical Chemistry. <br>
-        I then joined Moringa School for a course in Web Development as <br>
-        this has always been my passion. I am good at it because I give <br>
-        it my all and do it from the bottom of my heart. I believe learning <br>
-        coding has no end with the diversity and dynamicity of programming, <br>
-        so I am an individual who loves learning, both from peers and also from <br>
-        other sources. I have no experience in web Development as a job, <br>
-        but I am really looking forward to it. <br>
-        <br>
-        I am a strong believer in teamwork because as they say, unity is strength. <br>
-        My major interests and hobbies are currently travelling, socializing, <br>
-        and watching documentaries. <br>
-        <br>
-        Apart from coding, I have a digital badge in Introduction to CyberSecurity <br>
-        and Networking Essentials.
-        </p>
-        <input class="cv" type="button" value="DOWNLOAD CV">
-      </div>
-    </div>
-    <div class="all">
-      <div class="projects">
-        <h2>PROJECTS</h2>
-        <p>The following are the projects that I have worked on. One was a group project that I forked and worked on:</p>
-      </div>
-      <div class="burger">
-        <img src="img/burger-palace.png" alt="burger-palace" height="200">
-        <p>
-          This is a website of a restaurant that lets customers order fast foods 
-          from <br> their homes, and it includes other services like delivery. Technologies 
-          used were <br> HTML and Vanilla CSS only. <a href="https://moseskarani.github.io/burger-palace-project/" target="_blank">Click here to check it out.</a>
-        </p>
-      </div>
-      <div class="insurance">
-        <img src="img/insurance.png" alt="insurance company" height="200">
-        <p>
-          It's a website that let's customers access its services by letting them 
-          sign up/<br>log in. The services it offers are a lifetime serivce. Technologies <br>
-          used were HTML and Vanilla CSS  only. <a href="https://moseskarani.github.io/insurance-website/" target="_blank">Click here to check it out.</a>
-        </p>
-      </div>
-      <div class="quiz">
-        <img src="img/quiz.png" alt="quiz" height="211">
-        <p>
-          A JavaScript quiz for a high school computer club. This website will allow 
-          members to <br>take the quiz and give out the equivalent scores. Technologies used 
-          were HTML,<br>Vanilla CSS  and JavaScript only. <a href="https://moseskarani.github.io/quiz-board/" target="_blank">Click here to check it out.</a>
-        </p>
-      </div>
-      <div class="digifua">
-        <img src="img/digifua.png" alt="digifua" height="200">
-        <p>
-          This is a website that allows users request for laundry services,either in servi-<br>ce or pick & drop.
-          <a href="https://achiengy.github.io/Digi-Fua/" target="_blank">Click here to check it out.</a>
-        </p>
-      </div>
-    </div>
-    <div class="tech">
-      <div class="skill">
-      <h2>TECHNICAL SKILL SET</h2>
-      </div>
-      <div class="pfl">
-        <img  class="html5" src="img/html5.png" alt="html5"><br>
-        <!-- <label for="html5">HTML5</label> -->
-        <img class="css" src="img/css.png" alt="css"><br>
-        <!-- <label for="css">CSS</label> -->
-        <img class="bootstrap" src="img/bootstrap.png" alt="bootstrap"><br>
-        <!-- <label for="bootstrap">BOOTSTRAP</label> -->
-        <img class="js" src="img/javascript.png" alt="js"><br>
-        <!-- <label for="js">JAVASCRIPT</label> -->
-        <img class="figma" src="img/figma.png" alt="figma"><br>
-        <!-- <label for="figma">FIGMA</h3> -->
-      </div>
-    </div>
-<footer>
-  <p>&copy;Copyright. All Rights reserved</p>
-  <section class="icons">
-    <i class="bi bi-facebook"></i>
-    <i class="bi bi-twitter"></i>
-    <i class="bi bi-instagram"></i>
-    <i class="bi bi-linkedin"></i>
-  </section>
-  <p>Designed by Moses Karani</p>
-</footer>
-  </div>
+
+<body id="top">
+  <header>   	
+   	<div class="row">
+      <div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+										
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div>  		
+   </header> 
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Moses Karani.</h1>
+
+	   			<p class="intro-position">
+	   				<span>FullStack Developer</span>
+	   				
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://github.com/Morces" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/moseskarani/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://twitter.com/morces_c" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+				<p class="lead">
+					I am a passionate, self driven and ambitious software developer with an addiction to solving problems.
+					My hobbies are coding, photography and hiking.
+					While I'm not doing the above, you will find me watching tech documentaries or doing research on different technologies.  
+				</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-twelve tab-full">
+
+   			<h3>Technical Skills</h3>
+   			<p>During my time in Moringa School, I was able to acquire the following technical skills.</p>
+
+				<ul class="skill-bars">
+				   <li><strong>HTML5</strong></li>
+				   <li><strong>CSS3</strong></li>
+				   <li><strong>JavaScript</strong></li>
+				   <li><strong>Angular(Typescript)</strong></li>
+				   <li><strong>Python(Django/Flask)</strong></li>
+				   <li><strong>PostgreSQL</strong></li>
+				</ul> 	
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="mailto:karanim594@gmail.com" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="#" download="" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>UI Designer</h3>
+	   					<p>July 2015 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Awesome Studio</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Front-end Developer</h3>
+	   					<p>July 2014 - June 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Super Cool Agency</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Web Designer</h3>
+	   					<p>May 2013 - June 2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Great Designs Studio</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Master Degree</h3>
+	   					<p>July 2015 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>University of Life</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>July 2014 - June 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>State Design University</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>May 2013 - June 2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Design College</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">These are some personal projects I did.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/burger.png" alt="burger-place">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">BURGER PALACE LANDING PAGE</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  HTML/CSS
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/github.png" alt="">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">GITBUT-SEARCH</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  ANGULAR PROJECT
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/hood.png"alt="">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">THE NEIGHBORHOOD</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  DJANGO PROJECT
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/homepage.png" alt="">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">MI-PICZONE</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  DJANGO PROJECT
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/awards.png" alt="">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">AWWARDS</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  DJANGO PROJECT
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/akan.png" alt="">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">AKAN-NAME GENERATOR</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  HTML/CSS, JS
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/burger.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>BURGER PALACE</h4>		      
+					      <p>This is the landing page of a burger restaurant</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Morces/burger-palace-project" target="_blank">Details</a>
+						<a href="https://burger-pa-la-ce.netlify.app/" target="_blank">Site URL</a>
+					    <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/github.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>GITBUT-SEARCH</h4>		      
+					      <p>This project was generated with Angular CLI version 13.3.0. The purpose of this website is to enable users to search for their github usernames and repositories and it displays the for them.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Morces/github-search" target="_blank">Details</a>
+						<a href="https://morces.github.io/github-search/" target="_blank">Site URL</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/hood.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>THE NEIGHBORHOOD</h4>		      
+					      <p></p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+						<a href="https://burger-pa-la-ce.netlify.app/">Site URL</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/homepage.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>MI-PICZONE</h4>		      
+					      <p>This is a Django app that is actually a personal gallery. It allows a user to upload images for others to see.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+						<a href="https://burger-pa-la-ce.netlify.app/">Site URL</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+						<a href="https://burger-pa-la-ce.netlify.app/">Site URL</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Salad</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+						<a href="https://burger-pa-la-ce.netlify.app/">Site URL</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> 
+
+
+				   
+	         </div> 
+
+   		</div>   
+
+   	</div> 
+		
+	</section> 
+
+
+	
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>Contact Me</h5>
+				<h1>I'd Love To Hear From You.</h1>
+			</div> 
+   		</div>
+
+   	<div class="row contact-info">
+			   		
+   		<div class="col tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Reach Me At</h5>
+			
+   			<p>Phone: +254795968681<br>
+				Email: <a href="mailto:karanim594@gmail.com" style="color: grey;">karanim594@gmail.com</a><br>
+			</p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+		<div class="col-twelve tab-full">
+	      	<div class="copyright">
+		        	<p> &copy; Copyright 2022 </p> 
+		        	<p>Designed by Moses Karani</a></p> 
+		        		         	
+		    </div>		                  
+	    </div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
+
+</html>
+
