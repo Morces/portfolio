@@ -1,14 +1,14 @@
 # My portfolio
 ## Description 
 This is my portfolio. It contains a brief account about myself, my hobbies and interests, and some projects I did.
-This is a link to view the design: https://www.figma.com/file/4DkhH4lg7kfcLMCoElUE3E/Untitled?node-id=1%3A2
+
 ## Contributers 
 Current contributers:
 *Moringa School*
 MOSES KARANI
 ## Setup requirements
 You just need internet coonection and a device to access it directly from the internet.
-Click here to view my portfolio :https://moseskarani.github.io/portfolio/
+Click here to view my portfolio 
 ## Known Bugs
 None yet.
 ## Technologies used 
