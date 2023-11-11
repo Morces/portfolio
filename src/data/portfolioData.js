@@ -59,7 +59,7 @@ export const portfolioData = [
     title: "The Neighborhood",
     description:
       "This is a web application that allows you to be in the loop about everything happening in your neighborhood. From contact information of different handyman to meeting announcements or even alerts.",
-    techStack: ["HTML", "CSS", "React JS", "Django"],
+    techStack: ["HTML", "CSS", "JS", "Django"],
     liveLink: "",
     repoLink: "https://github.com/Morces/the-neighborhood.git",
     ariaLabel: "The Neighborhood",
