@@ -43,7 +43,7 @@ const Contact = () => {
           className="w-[80%] gap-5 m-auto contact-form"
         >
           <div className="input-control">
-            <span>Name :</span>
+            <span>Name </span>
             <input
               type="text"
               placeholder="Enter Your Name"
@@ -52,7 +52,7 @@ const Contact = () => {
             />
           </div>
           <div className="input-control margin">
-            <span>Email :</span>
+            <span>Email </span>
             <input
               type="email"
               placeholder="Enter Your Email"
@@ -61,7 +61,7 @@ const Contact = () => {
             />
           </div>
           <div className="input-control margin">
-            <span>Message :</span>
+            <span>Message </span>
             <textarea placeholder="Message" name="message" required></textarea>
           </div>
 

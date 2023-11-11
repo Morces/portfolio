@@ -24,7 +24,7 @@ const Socials = () => {
           <FaXTwitter />
         </a>
         <a
-          href="https://www.instagram.com/morces_c/"
+          href="https://www.instagram.com/morces_k/"
           target="_blank"
           aria-label="Instagram"
         >

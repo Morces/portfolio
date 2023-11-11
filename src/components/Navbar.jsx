@@ -11,8 +11,10 @@ const Navbar = () => {
         <ul className="nav_list">
           <li>
             <a
-              href="/"
-              className={`nav__link ${activeLink === "home" ? "active" : ""} scroll-smooth`}
+              href="#intro"
+              className={`nav__link ${
+                activeLink === "home" ? "active" : ""
+              } scroll-smooth`}
               onClick={() => setActiveLink("home")}
             >
               Home
@@ -21,7 +23,9 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className={`nav__link ${activeLink === "about" ? "active" : ""} scroll-smooth`}
+              className={`nav__link ${
+                activeLink === "about" ? "active" : ""
+              } scroll-smooth`}
               onClick={() => setActiveLink("about")}
             >
               About
