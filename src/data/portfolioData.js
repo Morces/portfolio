@@ -18,7 +18,7 @@ export const portfolioData = [
       "This is a To-Do App that helps you write down tasks to be done on a certain day.",
     techStack: ["HTML", "React JS", "CSS"],
     liveLink: "https://morcestodolist.netlify.app",
-    repoLink: "https://github.com/Morces/todo.git",
+    repoLink: "https://github.com/Morces/todo",
     ariaLabel: "To Do App",
   },
   {
@@ -28,8 +28,8 @@ export const portfolioData = [
     description:
       "This is a App that allows you to add items to your virtual cart, assuming you are doing shopping",
     techStack: ["HTML", "CSS", "JS"],
-    liveLink: "https://github.com/Morces/to-cart.git",
-    repoLink: "https://github.com/Morces/to-cart.git",
+    liveLink: "https://add-t0-car7.netlify.app",
+    repoLink: "https://github.com/Morces/to-cart",
     ariaLabel: "Add to cart",
   },
   {
@@ -40,7 +40,7 @@ export const portfolioData = [
       "This web application allows users to view their Akan names by inputting their dates of birth. Akan names are Ghanian names that are given to people depending on the day of the week they were born.",
     techStack: ["HTML", "CSS", "JS"],
     liveLink: "https://morces.netlify.app/",
-    repoLink: "https://github.com/Morces/akan-name-generator.git",
+    repoLink: "https://github.com/Morces/akan-name-generator",
     ariaLabel: "Akan Name Generator",
   },
   {
@@ -50,7 +50,7 @@ export const portfolioData = [
     description: "This is a landing page of a burger restaurant.",
     techStack: ["HTML", "CSS", "JS"],
     liveLink: "https://burger-pa-la-ce.netlify.app/",
-    repoLink: "https://github.com/Morces/burger-palace-project.git",
+    repoLink: "https://github.com/Morces/burger-palace-project",
     ariaLabel: "Burger Palace Restaurant",
   },
   {
@@ -61,7 +61,7 @@ export const portfolioData = [
       "This is a web application that allows you to be in the loop about everything happening in your neighborhood. From contact information of different handyman to meeting announcements or even alerts.",
     techStack: ["HTML", "CSS", "JS", "Django"],
     liveLink: "",
-    repoLink: "https://github.com/Morces/the-neighborhood.git",
+    repoLink: "https://github.com/Morces/the-neighborhood",
     ariaLabel: "The Neighborhood",
   },
   {
@@ -72,7 +72,7 @@ export const portfolioData = [
       "This project was generated with Angular CLI version 13.3.0. The purpose of this website is to enable users to search for their github usernames and repositories and it displays the for them.",
     techStack: ["HTML", "CSS", "JS", "Angular"],
     liveLink: "https://morces.github.io/github-search/",
-    repoLink: "https://github.com/Morces/github-search.git",
+    repoLink: "https://github.com/Morces/github-search",
     ariaLabel: "Github Search",
   },
 
@@ -83,8 +83,8 @@ export const portfolioData = [
     description:
       "This website is built using Tailwind CSS with a beautiful UI. It is the landing page of a property management system",
     techStack: ["HTML", "React JS", "Tailwind CSS"],
-    liveLink: "",
-    repoLink: "",
+    liveLink: "https://tuliaresidency.netlify.app",
+    repoLink: "https://github.com/Morces/tuliav2",
     ariaLabel: "Property management website",
   },
   {
@@ -95,7 +95,7 @@ export const portfolioData = [
       "This is a clone of Awwward Webiste. I cloned the UI with some amazing features.",
     techStack: ["HTML", "CSS", "JS"],
     liveLink: "",
-    repoLink: "https://github.com/Morces/mi-awwards.git",
+    repoLink: "https://github.com/Morces/mi-awwards",
     ariaLabel: "Awwwards Website Clone",
   },
 
