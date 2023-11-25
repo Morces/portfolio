@@ -1,6 +1,6 @@
 import akan from "../assets/portfolio/akan.png";
 import awards from "../assets/portfolio/awards.png";
-import burger from "../assets/portfolio/burger.png";
+import jobs from "../assets/portfolio/mobile.png";
 import github from "../assets/portfolio/github.png";
 import homepage from "../assets/portfolio/homepage.png";
 import mkombozi from "../assets/portfolio/mkombozi.png";
@@ -45,13 +45,14 @@ export const portfolioData = [
   },
   {
     id: 107,
-    img: burger,
-    title: "Burger Palace Restaurant",
-    description: "This is a landing page of a burger restaurant.",
-    techStack: ["HTML", "CSS", "JS"],
-    liveLink: "https://burger-pa-la-ce.netlify.app/",
-    repoLink: "https://github.com/Morces/burger-palace-project",
-    ariaLabel: "Burger Palace Restaurant",
+    img: jobs,
+    title: "Jobs",
+    description:
+      "This is a mobile application that enables people seeking employment to come and search for the job.",
+    techStack: ["React Native", "Axios", "Expo"],
+    liveLink: "",
+    repoLink: "https://github.com/Morces/jobs",
+    ariaLabel: "Jobs",
   },
   {
     id: 113,
