@@ -8,8 +8,20 @@ import tulia from "../assets/portfolio/tulia.png";
 import todo from "../assets/portfolio/todo.png";
 import cart from "../assets/portfolio/cart.png";
 import hood from "../assets/portfolio/hood.png";
+import sms from "../assets/portfolio/schoolarprime.png";
 
 export const portfolioData = [
+  {
+    id: 100,
+    img: sms,
+    title: "SMS - Schoolar Prime",
+    description:
+      "This is a School Management System. It incorporates all the school activites, eg Administration, Student management, finance, e.t.c",
+    techStack: ["HTML", "React JS", "CSS", "Django"],
+    liveLink: "https://schoolarprime.netlify.app/",
+    repoLink: "https://github.com/Morces/sms",
+    ariaLabel: "Schoolar Prime",
+  },
   {
     id: 109,
     img: todo,
@@ -21,6 +33,7 @@ export const portfolioData = [
     repoLink: "https://github.com/Morces/todo",
     ariaLabel: "To Do App",
   },
+
   {
     id: 115,
     img: cart,
