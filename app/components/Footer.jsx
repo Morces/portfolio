@@ -1,11 +1,15 @@
 import React from "react";
 
 const Footer = () => {
-  return (
-    <div className="w-full p-6 h-[200px] flex justify-center items-center">
-      <p className="text-center font-medium text-[#08A7E8]">Designed by Moses Karani</p>
-    </div>
-  );
+	const year = new Date().getFullYear();
+	return (
+		<footer className="w-full py-8 border-t border-white/5 bg-black flex flex-col items-center justify-center gap-2">
+			<p className="font-rajdhani text-gray-500 text-sm">
+				© {year} Moses Karani. System Status:{" "}
+				<span className="text-green-500">Online</span>
+			</p>
+		</footer>
+	);
 };
 
 export default Footer;
