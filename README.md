@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Moses Karani — Portfolio
 
-## Getting Started
+Personal portfolio site. Next.js 16 (App Router) · React 19 · Tailwind CSS v4 · `lucide-react`.
+Professional slate/indigo theme with light + dark mode.
 
-First, run the development server:
+## Getting started
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the printed URL (defaults to http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Editing content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Almost everything lives in one file: [`app/data/portfolioData.js`](app/data/portfolioData.js).
 
-## Learn More
+| Export | Drives |
+| --- | --- |
+| `profile` | Hero, About, Contact, Footer — name, role, tagline, socials, stats, bio, engineering principles |
+| `projects` | Projects section + detail modal. `image`, `githubUrl`, `metrics`, `architecture` are optional and only render when present. Categories are derived from the data. |
+| `skillCategories` | Skills section. `level` / `years` / `levelLabel` are personal estimates — tune freely. |
+| `experiences` | Experience timeline. Empty `achievements` / `technologies` arrays are hidden. |
+| `education`, `certificates` | Education column of the Experience section |
 
-To learn more about Next.js, take a look at the following resources:
+Add a project screenshot to `public/portfolio/` and point the project's `image` at it
+(e.g. `"/portfolio/foo.png"`). Projects with no `image` render a gradient initials tile.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The résumé download is `public/Moses Karani.pdf`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact form
 
-## Deploy on Vercel
+`Contact.jsx` posts to `app/api/send-mail/route.js`, which sends via Gmail
+(`nodemailer`) from **morcescodex@gmail.com**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Set the Gmail **App Password** in `.env`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+EMAIL_PASSWORD=your16charapppassword
+```
+
+(Spaces in the value are stripped automatically.) The same variable must be set
+in the host's environment for production.
+
+## Theme
+
+Dark is the default. The choice is stored in `localStorage` under `portfolio_theme`
+and applied before paint by an inline script in `app/layout.js` (no flash).
+
+## Deploy
+
+```bash
+yarn build && yarn start
+```
+
+Any Node host works; remember to provide `EMAIL_PASSWORD`.

@@ -1,122 +1,67 @@
 @import "tailwindcss";
 
-@theme {
-	/* Fonts */
-	--font-orbitron: var(--font-orbitron);
-	--font-rajdhani: var(--font-rajdhani);
-	--font-inter: var(--font-inter);
+@custom-variant dark (&:where(.dark, .dark *));
 
-	/* Colors */
-	--color-cyber-black: #050505;
-	--color-cyber-gray: #0a0a0a;
-	--color-neon-cyan: #00f3ff;
-	--color-neon-purple: #bc13fe;
-	--color-neon-green: #b0fb5d;
-	--color-deep-blue: #0a192f;
-
-	/* Animations */
-	--animate-glitch: glitch 1s linear infinite;
-	--animate-float: float 6s ease-in-out infinite;
-
-	@keyframes glitch {
-		2%,
-		64% {
-			transform: translate(2px, 0) skew(0deg);
-		}
-		4%,
-		60% {
-			transform: translate(-2px, 0) skew(0deg);
-		}
-		62% {
-			transform: translate(0, 0) skew(5deg);
-		}
-	}
-
-	@keyframes float {
-		0%,
-		100% {
-			transform: translateY(0);
-		}
-		50% {
-			transform: translateY(-20px);
-		}
-	}
-}
-
-/* Base Styles */
+/* Real custom properties (the next/font vars live on <html> = :root). */
 :root {
-	--background: #050505;
-	--foreground: #ededed;
+	--app-font-sans: var(--font-urbanist), ui-sans-serif, system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+	--app-font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo,
+		Monaco, Consolas, "Liberation Mono", monospace;
 }
 
-html.lenis,
-html.lenis body {
-	height: auto;
+/* Map Tailwind's font utilities (font-sans / font-mono) onto the app fonts. */
+@theme inline {
+	--font-sans: var(--app-font-sans);
+	--font-mono: var(--app-font-mono);
 }
 
-.lenis.lenis-smooth {
-	scroll-behavior: auto !important;
+@layer base {
+	html {
+		font-family: var(--app-font-sans);
+	}
+
+	code,
+	pre,
+	.font-mono {
+		font-family: var(--app-font-mono);
+	}
 }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-	overscroll-behavior: contain;
+/* Ambient glow used behind the hero */
+@keyframes pulseGlow {
+	0%,
+	100% {
+		opacity: 0.4;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.8;
+		transform: scale(1.05);
+	}
 }
 
-.lenis.lenis-stopped {
-	overflow: hidden;
+.animate-pulse-glow {
+	animation: pulseGlow 6s ease-in-out infinite;
 }
 
-.lenis.lenis-scrolling iframe {
-	pointer-events: none;
+/* Hide scrollbars on horizontally scrollable filter rows */
+.scrollbar-none {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
-html {
-	scroll-behavior: smooth !important;
+.scrollbar-none::-webkit-scrollbar {
+	display: none;
 }
 
-body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: var(--font-rajdhani), sans-serif;
-	overflow-x: hidden;
-	width: 100%;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-::-webkit-scrollbar-track {
-	background: #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #333;
-	border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #00f3ff;
-}
-
-/* Utilities */
-.glass-panel {
-	background: rgba(10, 10, 10, 0.6);
-	backdrop-filter: blur(12px);
-	border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.neon-border-cyan {
-	box-shadow:
-		0 0 10px rgba(0, 243, 255, 0.3),
-		inset 0 0 5px rgba(0, 243, 255, 0.1);
-	border: 1px solid rgba(0, 243, 255, 0.5);
-}
-
-.text-gradient {
-	background: linear-gradient(to right, #00f3ff, #bc13fe);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
+/* Respect reduced-motion for the scroll-reveal wrapper */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
 }

@@ -1,142 +1,120 @@
 "use client";
 
-import React, { useRef } from "react";
-import skills from "../data/skills";
-import Section from "./ui/Section";
-import GlassCard from "./ui/GlassCard";
-import CyberButton from "./ui/CyberButton";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React from "react";
+import {
+	Layers,
+	ShieldCheck,
+	Zap,
+	Activity,
+	Code2,
+	Terminal,
+	Sparkles,
+	Award,
+	Globe,
+	Compass,
+} from "lucide-react";
+import { profile } from "../data/portfolioData";
 
-gsap.registerPlugin(ScrollTrigger);
+const principleIcon = (name) => {
+	switch (name) {
+		case "Layers":
+			return <Layers className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />;
+		case "ShieldCheck":
+			return <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />;
+		case "Zap":
+			return <Zap className="w-5 h-5 text-amber-600 dark:text-amber-400" />;
+		case "Activity":
+			return <Activity className="w-5 h-5 text-sky-600 dark:text-sky-400" />;
+		default:
+			return <Sparkles className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />;
+	}
+};
 
-const About = () => {
-	const containerRef = useRef(null);
-	const titleRef = useRef(null);
-	const skillsRef = useRef(null);
+const factIcon = [Terminal, Globe, Award];
+const factTint = [
+	"bg-indigo-50 dark:bg-indigo-950/60 border-indigo-200 dark:border-indigo-800/40 text-indigo-600 dark:text-indigo-400",
+	"bg-emerald-50 dark:bg-emerald-950/60 border-emerald-200 dark:border-emerald-800/40 text-emerald-600 dark:text-emerald-400",
+	"bg-sky-50 dark:bg-sky-950/60 border-sky-200 dark:border-sky-800/40 text-sky-600 dark:text-sky-400",
+];
 
-	useGSAP(() => {
-		const tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: containerRef.current,
-				start: "top 80%",
-				end: "bottom 20%",
-				toggleActions: "play none none reverse",
-			},
-		});
-
-		tl.from(titleRef.current, {
-			y: 30,
-			opacity: 0,
-			duration: 0.8,
-			ease: "power2.out",
-		})
-			.from(
-				".about-text",
-				{
-					y: 20,
-					opacity: 0,
-					duration: 0.8,
-				},
-				"-=0.4",
-			)
-			.from(
-				skillsRef.current.children,
-				{
-					scale: 0.8,
-					opacity: 0,
-					duration: 0.5,
-					stagger: 0.1,
-					ease: "back.out(1.7)",
-				},
-				"-=0.4",
-			);
-	}, []);
-
+export const About = () => {
 	return (
-		<Section id="about" className="overflow-hidden">
-			<div ref={containerRef} className="flex flex-col gap-16">
-				{/* Header */}
-				<div ref={titleRef} className="text-center space-y-4">
-					<h3 className="text-cyan-400 font-rajdhani font-bold text-xl uppercase tracking-[0.3em]">
-						// Operator Profile
-					</h3>
-					<h2 className="text-4xl md:text-5xl font-orbitron font-bold text-white">
-						About{" "}
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-							Me
-						</span>
+		<section id="about" className="py-20 border-b border-slate-200 dark:border-slate-900 relative">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="flex flex-col items-start space-y-2 mb-12">
+					<div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-semibold uppercase tracking-wider">
+						<Compass className="w-4 h-4" />
+						<span>Biography &amp; Background</span>
+					</div>
+					<h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+						Engineering with intent &amp; craft
 					</h2>
+					<p className="text-slate-600 dark:text-slate-400 max-w-2xl text-sm sm:text-base">
+						A look at how I work, what I care about, and the path that got me here.
+					</p>
 				</div>
 
-				<div className="grid lg:grid-cols-2 gap-12 items-start">
-					{/* Bio Text */}
-					<div className="about-text space-y-6">
-						<GlassCard className="h-full">
-							<h4 className="text-2xl font-orbitron font-bold text-white mb-4">
-								Mission Directive
-							</h4>
-							<p className="text-gray-300 font-rajdhani text-lg leading-relaxed text-justify">
-								I am a passionate, self-driven, and ambitious software engineer
-								with an addiction to solving complex problems. My operational
-								downtime involves coding, photography, and hiking. When offline,
-								I engage in research on emerging technologies and analyzing tech
-								documentaries.
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+					<div className="lg:col-span-7 space-y-6">
+						<div className="p-6 rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/90 shadow-sm space-y-4">
+							<p className="text-slate-900 dark:text-white font-medium text-lg sm:text-xl leading-snug">
+								&ldquo;{profile.bioIntro}&rdquo;
 							</p>
+							{profile.bioParagraphs.map((para, idx) => (
+								<p key={idx} className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+									{para}
+								</p>
+							))}
+						</div>
 
-							<div className="flex flex-wrap gap-4 mt-8">
-								<CyberButton
-									href="mailto:karanim594@mail.com"
-									variant="primary"
-								>
-									Initialize Contact
-								</CyberButton>
-								<CyberButton
-									href="/Moses Karani.pdf"
-									variant="secondary"
-									onClick={() => {}}
-								>
-									Download Data Log (CV)
-								</CyberButton>
-							</div>
-						</GlassCard>
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+							{profile.quickFacts.map((fact, idx) => {
+								const Icon = factIcon[idx % factIcon.length];
+								return (
+									<div
+										key={fact.label}
+										className="p-4 rounded-xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none flex items-start gap-3"
+									>
+										<div className={`p-2 rounded-lg border mt-0.5 ${factTint[idx % factTint.length]}`}>
+											<Icon className="w-4 h-4" />
+										</div>
+										<div>
+											<h4 className="text-xs font-semibold text-slate-900 dark:text-slate-200">{fact.label}</h4>
+											<p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{fact.value}</p>
+										</div>
+									</div>
+								);
+							})}
+						</div>
 					</div>
 
-					{/* Tech Stack Grid */}
-					<div className="space-y-6">
-						<h3 className="text-2xl font-orbitron font-bold text-white mb-4 pl-2 border-l-4 border-cyan-400">
-							Tech Matrix
+					<div className="lg:col-span-5 space-y-4">
+						<h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 font-mono mb-2 flex items-center gap-2">
+							<Code2 className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+							<span>How I Approach the Work</span>
 						</h3>
-						<div
-							ref={skillsRef}
-							className="grid grid-cols-3 sm:grid-cols-4 gap-4"
-						>
-							{skills.map((skill) => (
+						<div className="space-y-3.5">
+							{profile.engineeringPrinciples.map((principle, idx) => (
 								<div
-									key={skill.id}
-									className="group relative flex flex-col items-center justify-center p-4 bg-white/5 rounded-xl border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-900/10 transition-all duration-300 cursor-default"
+									key={idx}
+									className="p-4 rounded-xl bg-white dark:bg-slate-900/60 hover:bg-slate-50 dark:hover:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm dark:shadow-none transition-all duration-200"
 								>
-									<div className="w-12 h-12 relative flex items-center justify-center mb-2 transition-transform duration-300 group-hover:scale-110">
-										<img
-											src={skill.img}
-											alt={skill.title}
-											className="w-full h-full object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
-										/>
+									<div className="flex items-center gap-3 mb-1.5">
+										<div className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+											{principleIcon(principle.icon)}
+										</div>
+										<h4 className="font-semibold text-sm text-slate-900 dark:text-slate-100">{principle.title}</h4>
 									</div>
-									<p className="text-xs font-rajdhani font-bold text-gray-400 group-hover:text-cyan-400 uppercase tracking-wider text-center">
-										{skill.title}
+									<p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed pl-9">
+										{principle.description}
 									</p>
-
-									{/* Glow Effect */}
-									<div className="absolute inset-0 rounded-xl bg-cyan-400/10 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10" />
 								</div>
 							))}
 						</div>
 					</div>
 				</div>
 			</div>
-		</Section>
+		</section>
 	);
 };
 
